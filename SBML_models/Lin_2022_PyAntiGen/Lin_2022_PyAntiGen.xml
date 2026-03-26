@@ -1,0 +1,2363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version2/core" level="3" version="2">
+  <model metaid="__main" id="__main">
+    <listOfCompartments>
+      <compartment id="BrainISF" spatialDimensions="3" constant="true"/>
+      <compartment id="CSF" spatialDimensions="3" constant="true"/>
+      <compartment id="IV" spatialDimensions="3" constant="true"/>
+      <compartment id="Peripheral" spatialDimensions="3" constant="true"/>
+      <compartment id="Plasma" spatialDimensions="3" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="AB42_BrainISF" compartment="BrainISF" initialAmount="0.970534436" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_CSF" compartment="CSF" initialAmount="0.411725338" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Oligomer_BrainISF" compartment="BrainISF" initialAmount="95.41650095" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Oligomer_CSF" compartment="CSF" initialAmount="0.002809592" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Oligomer_Plasma" compartment="Plasma" initialAmount="4.51e-11" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Oligomer__Antibody_BrainISF" compartment="BrainISF" initialAmount="1.27e-42" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Oligomer__Antibody_CSF" compartment="CSF" initialAmount="3.45e-47" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Oligomer__Antibody_Plasma" compartment="Plasma" initialAmount="1.12e-48" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Oligomer__Antibody__FcR_BrainISF" compartment="BrainISF" initialAmount="1.27e-46" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Plaque_BrainISF" compartment="BrainISF" initialAmount="1502.334526" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Plaque__Antibody_BrainISF" compartment="BrainISF" initialAmount="2e-41" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Plaque__Antibody__FcR_BrainISF" compartment="BrainISF" initialAmount="1.99e-45" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42_Plasma" compartment="Plasma" initialAmount="0.341592701" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42__Antibody_BrainISF" compartment="BrainISF" initialAmount="2.32e-47" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42__Antibody_CSF" compartment="CSF" initialAmount="8.68e-48" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="AB42__Antibody_Plasma" compartment="Plasma" initialAmount="1.43e-45" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="APP_BrainISF" compartment="BrainISF" initialAmount="5.017106427" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="APP_Plasma" compartment="Plasma" initialAmount="28.03742035" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="APP__BACE_BrainISF" compartment="BrainISF" initialAmount="0.001357164" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="APP__BACE_Plasma" compartment="Plasma" initialAmount="0.007002607" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Antibody_BrainISF" compartment="BrainISF" initialAmount="6.24e-44" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Antibody_CSF" compartment="CSF" initialAmount="2.93e-44" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Antibody_IV" compartment="IV" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Antibody_Peripheral" compartment="Peripheral" initialAmount="4.59e-40" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="Antibody_Plasma" compartment="Plasma" initialAmount="3000000" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="BACE_BrainISF" compartment="BrainISF" initialAmount="8.472290338" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="BACE_Plasma" compartment="Plasma" initialAmount="89.91335622" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="CTFbeta_BrainISF" compartment="BrainISF" initialAmount="0.024830791" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="CTFbeta_Plasma" compartment="Plasma" initialAmount="0.128122552" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="CTFbeta__GammaSecretase_BrainISF" compartment="BrainISF" initialAmount="0.005747989" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="CTFbeta__GammaSecretase_Plasma" compartment="Plasma" initialAmount="0.029658101" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="FcR_BrainISF" compartment="BrainISF" initialAmount="0.261000312" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="GammaSecretase_BrainISF" compartment="BrainISF" initialAmount="13050.27527" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="GammaSecretase_Plasma" compartment="Plasma" initialAmount="150000.5194" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="SolubleBACE_BrainISF" compartment="BrainISF" initialAmount="0.01063311" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="SolubleBACE_CSF" compartment="CSF" initialAmount="0.003970015" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+      <species id="SolubleBACE_Plasma" compartment="Plasma" initialAmount="0.295959743" hasOnlySubstanceUnits="true" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="V_BrainISF" value="0.261" constant="true"/>
+      <parameter id="V_CSF" value="0.139" constant="true"/>
+      <parameter id="V_IV" value="1" constant="true"/>
+      <parameter id="V_Peripheral" value="3" constant="true"/>
+      <parameter id="V_Plasma" value="3" constant="true"/>
+      <parameter id="kinfusion" value="0" constant="true"/>
+      <parameter id="kclearmAb" value="1.4586e-06" constant="true"/>
+      <parameter id="k12mAb" value="2.5e-06" constant="true"/>
+      <parameter id="k21mAb" value="1e-06" constant="true"/>
+      <parameter id="k13mAb" value="1.7222e-09" constant="true"/>
+      <parameter id="k31mAb" value="4.1667e-05" constant="true"/>
+      <parameter id="k14mAb" value="1.6045e-06" constant="true"/>
+      <parameter id="k41mAb" value="0.0032" constant="true"/>
+      <parameter id="k43mAb" value="1.5509e-05" constant="true"/>
+      <parameter id="ksynthAPP_plasma" value="0.0014" constant="true"/>
+      <parameter id="kclearAPP" value="4.8135e-05" constant="true"/>
+      <parameter id="ksynthBACE_plasma" value="0.0011" constant="true"/>
+      <parameter id="kclearBACE" value="1.2034e-05" constant="true"/>
+      <parameter id="kclearBACEs" value="6.418e-05" constant="true"/>
+      <parameter id="ksynthGamma_plasma" value="28.8811" constant="true"/>
+      <parameter id="kclearGamma" value="0.00019254" constant="true"/>
+      <parameter id="kcleave" value="2e-07" constant="true"/>
+      <parameter id="konPP" value="0.001" constant="true"/>
+      <parameter id="koffBACE" value="119.9928" constant="true"/>
+      <parameter id="kcatBACE" value="0.0072" constant="true"/>
+      <parameter id="koffGamma" value="215.9983" constant="true"/>
+      <parameter id="kcatGamma" value="0.0017" constant="true"/>
+      <parameter id="ksynthAPP_bisf" value="0.00025127" constant="true"/>
+      <parameter id="ksynthBACE_bisf" value="0.00010365" constant="true"/>
+      <parameter id="ksynthGamma_bisf" value="2.5127" constant="true"/>
+      <parameter id="kM2G" value="1.4e-05" constant="true"/>
+      <parameter id="kG2M_plasma" value="140000" constant="true"/>
+      <parameter id="kclearAbeta_plasma" value="9.627e-05" constant="true"/>
+      <parameter id="kclearAolig_plasma" value="9.627e-05" constant="true"/>
+      <parameter id="kG2M_csf" value="0.0028" constant="true"/>
+      <parameter id="kG2M_bisf" value="1.4e-08" constant="true"/>
+      <parameter id="kclearAbeta_bisf" value="1.9254e-05" constant="true"/>
+      <parameter id="kclearAolig_bisf" value="2.204e-08" constant="true"/>
+      <parameter id="kG2P" value="7e-08" constant="true"/>
+      <parameter id="kP2G_bisf" value="7e-11" constant="true"/>
+      <parameter id="kclearAplaque_bisf" value="4.408e-09" constant="true"/>
+      <parameter id="k13Abeta" value="1.7222e-09" constant="true"/>
+      <parameter id="k31Abeta" value="4.1667e-05" constant="true"/>
+      <parameter id="k14Abeta" value="0.00014811" constant="true"/>
+      <parameter id="k41Abeta" value="1.4811e-05" constant="true"/>
+      <parameter id="k43Abeta" value="1.5509e-05" constant="true"/>
+      <parameter id="k13Aolig" value="1.7222e-09" constant="true"/>
+      <parameter id="k31Aolig" value="4.1667e-05" constant="true"/>
+      <parameter id="k14Aolig" value="1.4811e-06" constant="true"/>
+      <parameter id="k41Aolig" value="1.4811e-08" constant="true"/>
+      <parameter id="k43Aolig" value="2.3264e-08" constant="true"/>
+      <parameter id="k13BACE" value="1.7222e-09" constant="true"/>
+      <parameter id="k31BACE" value="4.1667e-05" constant="true"/>
+      <parameter id="k14BACE" value="2.0056e-08" constant="true"/>
+      <parameter id="k41BACE" value="8.0226e-05" constant="true"/>
+      <parameter id="k43BACE" value="1.5509e-05" constant="true"/>
+      <parameter id="kmAb0" value="10" constant="true"/>
+      <parameter id="kmAb1" value="0.018" constant="true"/>
+      <parameter id="k14mix" value="1.6045e-06" constant="true"/>
+      <parameter id="k41mix" value="1.4811e-08" constant="true"/>
+      <parameter id="k43mix" value="2.3264e-08" constant="true"/>
+      <parameter id="konPD" value="0.001" constant="true"/>
+      <parameter id="kmAb2" value="0.018" constant="true"/>
+      <parameter id="ksynthFcR_bisf" value="5.0253e-05" constant="true"/>
+      <parameter id="kclearFcR" value="0.00019254" constant="true"/>
+      <parameter id="konPF" value="0.001" constant="true"/>
+      <parameter id="koffPF" value="10" constant="true"/>
+      <parameter id="kcatADCP" value="0.0036" constant="true"/>
+      <parameter id="totalmAbPlasma" constant="false"/>
+      <parameter id="totalmAbCSF" constant="false"/>
+      <parameter id="totalAbetaPlasma" constant="false"/>
+      <parameter id="totaloligPlasma" constant="false"/>
+      <parameter id="totalPlaque" constant="false"/>
+      <parameter id="totaloligISF" constant="false"/>
+      <parameter id="totalAbetaBrainISF" constant="false"/>
+    </listOfParameters>
+    <listOfInitialAssignments>
+      <initialAssignment symbol="BrainISF">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> V_BrainISF </ci>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="CSF">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> V_CSF </ci>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="IV">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> V_IV </ci>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="Peripheral">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> V_Peripheral </ci>
+        </math>
+      </initialAssignment>
+      <initialAssignment symbol="Plasma">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> V_Plasma </ci>
+        </math>
+      </initialAssignment>
+    </listOfInitialAssignments>
+    <listOfRules>
+      <assignmentRule variable="totalmAbPlasma">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Antibody_Plasma </ci>
+            <ci> AB42__Antibody_Plasma </ci>
+            <ci> AB42_Oligomer__Antibody_Plasma </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalmAbCSF">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> Antibody_CSF </ci>
+            <ci> AB42__Antibody_CSF </ci>
+            <ci> AB42_Oligomer__Antibody_CSF </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalAbetaPlasma">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> AB42_Plasma </ci>
+            <ci> AB42__Antibody_Plasma </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totaloligPlasma">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> AB42_Oligomer_Plasma </ci>
+            <ci> AB42_Oligomer__Antibody_Plasma </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalPlaque">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> AB42_Plaque_BrainISF </ci>
+            <ci> AB42_Plaque__Antibody_BrainISF </ci>
+            <ci> AB42_Plaque__Antibody__FcR_BrainISF </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totaloligISF">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> AB42_Oligomer_BrainISF </ci>
+            <ci> AB42_Oligomer__Antibody_BrainISF </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="totalAbetaBrainISF">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> AB42_BrainISF </ci>
+            <ci> AB42__Antibody_BrainISF </ci>
+          </apply>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+    <listOfReactions>
+      <reaction id="Flow_IV_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_IV" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kinfusion </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_IV </ci>
+                <ci> V_IV </ci>
+              </apply>
+              <ci> V_IV </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_Plasma_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearmAb </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_Peripheral_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_Peripheral" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k12mAb </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Peripheral_Plasma_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_Peripheral" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k21mAb </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_Peripheral </ci>
+                <ci> V_Peripheral </ci>
+              </apply>
+              <ci> V_Peripheral </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_CSF_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k13mAb </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_CSF_Plasma_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k31mAb </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_BrainISF_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k14mAb </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_BrainISF_Plasma_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41mAb </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_BrainISF_CSF_mAb_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k43mAb </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synth_APP_Plasma" reversible="true">
+        <listOfProducts>
+          <speciesReference species="APP_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> ksynthAPP_plasma </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_APP_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="APP_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearAPP </ci>
+              <apply>
+                <divide/>
+                <ci> APP_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synth_BACE_Plasma" reversible="true">
+        <listOfProducts>
+          <speciesReference species="BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> ksynthBACE_plasma </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_BACE_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearBACE </ci>
+              <apply>
+                <divide/>
+                <ci> BACE_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_BACEs_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="SolubleBACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearBACEs </ci>
+              <apply>
+                <divide/>
+                <ci> SolubleBACE_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synth_GammaSecretase_Plasma" reversible="true">
+        <listOfProducts>
+          <speciesReference species="GammaSecretase_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> ksynthGamma_plasma </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_GammaSecretase_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="GammaSecretase_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearGamma </ci>
+              <apply>
+                <divide/>
+                <ci> GammaSecretase_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cleave_BACE_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SolubleBACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcleave </ci>
+              <apply>
+                <divide/>
+                <ci> BACE_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_APP_BACE_Plasma_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="APP_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="APP__BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> APP_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> BACE_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_APP_BACE_Plasma_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="APP__BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="APP_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> koffBACE </ci>
+              <apply>
+                <divide/>
+                <ci> APP__BACE_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cat_APP_BACE_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="APP__BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CTFbeta_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="BACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcatBACE </ci>
+              <apply>
+                <divide/>
+                <ci> APP__BACE_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_CTFb_Gamma_Plasma_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="CTFbeta_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="GammaSecretase_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CTFbeta__GammaSecretase_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> CTFbeta_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> GammaSecretase_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_CTFb_Gamma_Plasma_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="CTFbeta__GammaSecretase_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CTFbeta_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="GammaSecretase_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> koffGamma </ci>
+              <apply>
+                <divide/>
+                <ci> CTFbeta__GammaSecretase_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cat_CTFb_Gamma_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="CTFbeta__GammaSecretase_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="GammaSecretase_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcatGamma </ci>
+              <apply>
+                <divide/>
+                <ci> CTFbeta__GammaSecretase_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synth_APP_BrainISF" reversible="true">
+        <listOfProducts>
+          <speciesReference species="APP_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> ksynthAPP_bisf </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_APP_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="APP_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearAPP </ci>
+              <apply>
+                <divide/>
+                <ci> APP_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synth_BACE_BrainISF" reversible="true">
+        <listOfProducts>
+          <speciesReference species="BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> ksynthBACE_bisf </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_BACE_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearBACE </ci>
+              <apply>
+                <divide/>
+                <ci> BACE_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_BACEs_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="SolubleBACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearBACEs </ci>
+              <apply>
+                <divide/>
+                <ci> SolubleBACE_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synth_GammaSecretase_BrainISF" reversible="true">
+        <listOfProducts>
+          <speciesReference species="GammaSecretase_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> ksynthGamma_bisf </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_GammaSecretase_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="GammaSecretase_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearGamma </ci>
+              <apply>
+                <divide/>
+                <ci> GammaSecretase_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cleave_BACE_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SolubleBACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcleave </ci>
+              <apply>
+                <divide/>
+                <ci> BACE_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_APP_BACE_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="APP_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="APP__BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> APP_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> BACE_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_APP_BACE_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="APP__BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="APP_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> koffBACE </ci>
+              <apply>
+                <divide/>
+                <ci> APP__BACE_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cat_APP_BACE_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="APP__BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CTFbeta_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="BACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcatBACE </ci>
+              <apply>
+                <divide/>
+                <ci> APP__BACE_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_CTFb_Gamma_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="CTFbeta_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="GammaSecretase_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CTFbeta__GammaSecretase_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> CTFbeta_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> GammaSecretase_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_CTFb_Gamma_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="CTFbeta__GammaSecretase_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="CTFbeta_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="GammaSecretase_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> koffGamma </ci>
+              <apply>
+                <divide/>
+                <ci> CTFbeta__GammaSecretase_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Cat_CTFb_Gamma_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="CTFbeta__GammaSecretase_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="GammaSecretase_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcatGamma </ci>
+              <apply>
+                <divide/>
+                <ci> CTFbeta__GammaSecretase_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Agg_M2G_G2M_Abeta_Plasma_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kM2G </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Agg_M2G_G2M_Abeta_Plasma_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kG2M_plasma </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_Abeta_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearAbeta_plasma </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_Aolig_Plasma" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearAolig_plasma </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Agg_M2G_G2M_Abeta_CSF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kM2G </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Agg_M2G_G2M_Abeta_CSF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kG2M_csf </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Agg_M2G_G2M_Abeta_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kM2G </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Agg_M2G_G2M_Abeta_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kG2M_bisf </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_Abeta_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearAbeta_bisf </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_Aolig_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearAolig_bisf </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Agg_G2P_P2G_Abeta_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Plaque_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kG2P </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Agg_G2P_P2G_Abeta_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plaque_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kP2G_bisf </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plaque_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_Aplaq_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plaque_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearAplaque_bisf </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plaque_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_13_31_Abeta__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k13Abeta </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_13_31_Abeta__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k31Abeta </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_14_41_Abeta__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k14Abeta </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_14_41_Abeta__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41Abeta </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_43_Abeta_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k43Abeta </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_13_31_Aolig__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k13Aolig </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_13_31_Aolig__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k31Aolig </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_14_41_Aolig__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k14Aolig </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_14_41_Aolig__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41Aolig </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_43_Aolig_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k43Aolig </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_13_31_BACEs__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="SolubleBACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SolubleBACE_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k13BACE </ci>
+              <apply>
+                <divide/>
+                <ci> SolubleBACE_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_13_31_BACEs__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="SolubleBACE_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SolubleBACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k31BACE </ci>
+              <apply>
+                <divide/>
+                <ci> SolubleBACE_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_14_41_BACEs__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="SolubleBACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SolubleBACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k14BACE </ci>
+              <apply>
+                <divide/>
+                <ci> SolubleBACE_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_14_41_BACEs__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="SolubleBACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SolubleBACE_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41BACE </ci>
+              <apply>
+                <divide/>
+                <ci> SolubleBACE_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_43_BACEs_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="SolubleBACE_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="SolubleBACE_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k43BACE </ci>
+              <apply>
+                <divide/>
+                <ci> SolubleBACE_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Abeta_Plasma_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> AB42_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Abeta_Plasma_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kmAb0 </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aolig_Plasma_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aolig_Plasma_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_Plasma" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Oligomer_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kmAb1 </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Abeta_CSF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_CSF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> AB42_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Abeta_CSF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_CSF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kmAb0 </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aolig_CSF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_CSF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Oligomer_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aolig_CSF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_CSF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Oligomer_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kmAb1 </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Abeta_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> AB42_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Abeta_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kmAb0 </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aolig_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPP </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aolig_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Oligomer_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kmAb1 </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_Plasma_mAb_Abeta_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearmAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_CSF_mAb_Abeta__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k13mAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_CSF_mAb_Abeta__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k31mAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_BrainISF_mAb_Abeta__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k14mAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_BrainISF_mAb_Abeta__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41mAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_BrainISF_CSF_mAb_Abeta_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k43mAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_Plasma_mAb_Aolig_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearmAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_CSF_mAb_Aolig__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k13mAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_CSF_mAb_Aolig__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k31mAb </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_CSF </ci>
+                <ci> V_CSF </ci>
+              </apply>
+              <ci> V_CSF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_BrainISF_mAb_Aolig__fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k14mix </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_Plasma </ci>
+                <ci> V_Plasma </ci>
+              </apply>
+              <ci> V_Plasma </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_Plasma_BrainISF_mAb_Aolig__rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_Plasma" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k41mix </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Flow_BrainISF_CSF_mAb_Aolig_" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_CSF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k43mix </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aplaq_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Plaque_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Plaque__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPD </ci>
+              <apply>
+                <divide/>
+                <ci> Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> AB42_Plaque_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aplaq_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plaque__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="AB42_Plaque_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kmAb2 </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plaque__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Synth_FcR_BrainISF" reversible="true">
+        <listOfProducts>
+          <speciesReference species="FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <ci> ksynthFcR_bisf </ci>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Clear_FcR_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kclearFcR </ci>
+              <apply>
+                <divide/>
+                <ci> FcR_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aolig_FcR_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody__FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPF </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> FcR_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aolig_FcR_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody__FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Oligomer__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> koffPF </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody__FcR_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Catalysis_ADCP_Aolig_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Oligomer__Antibody__FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcatADCP </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Oligomer__Antibody__FcR_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aplaq_FcR_BrainISF_fwd" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plaque__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Plaque__Antibody__FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> konPF </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plaque__Antibody_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <apply>
+                <divide/>
+                <ci> FcR_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Bind_mAb_Aplaq_FcR_BrainISF_rev" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plaque__Antibody__FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="AB42_Plaque__Antibody_BrainISF" stoichiometry="1" constant="true"/>
+          <speciesReference species="FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> koffPF </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plaque__Antibody__FcR_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="Catalysis_ADCP_Aplaq_BrainISF" reversible="true">
+        <listOfReactants>
+          <speciesReference species="AB42_Plaque__Antibody__FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="FcR_BrainISF" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> kcatADCP </ci>
+              <apply>
+                <divide/>
+                <ci> AB42_Plaque__Antibody__FcR_BrainISF </ci>
+                <ci> V_BrainISF </ci>
+              </apply>
+              <ci> V_BrainISF </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
