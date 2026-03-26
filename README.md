@@ -1,6 +1,6 @@
 # Lin_2022_PyAntiGen
 
-This repository contains the implementation of the Lin_2022 model, utilizing the PyAntiGen framework for modular model generation, simulation, and optimization.
+This repository contains the implementation of the Lin_2022 model (https://onlinelibrary.wiley.com/doi/10.1002/psp4.12759), utilizing the PyAntiGen framework for modular model generation, simulation, and optimization.
 
 ## Prerequisites
 
